@@ -404,12 +404,12 @@ export default function Home() {
               { src: "/images/5.jpg", label: "Product Review Pose", step: "Step 5" },
             ].map((item, i) => (
               <div key={i} className="group relative rounded-xl overflow-hidden border bg-background shadow-sm">
-                <div className="relative aspect-square">
+                <div className="relative aspect-[3/4]">
                   <Image
                     src={item.src}
                     alt={item.label}
                     fill
-                    className="object-contain transition-transform duration-300 group-hover:scale-105"
+                    className="object-cover object-top transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
                 <div className="p-3">
