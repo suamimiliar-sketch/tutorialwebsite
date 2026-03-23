@@ -79,7 +79,7 @@ export default function PasswordGate({ children }: { children: React.ReactNode }
             <form onSubmit={handleSubmit}>
               <label className="pg-label">Access Code</label>
               <div className={`pg-input-row ${shake ? "pgshake" : ""}`}>
-                <input type="text" className={`pg-input ${error ? "err" : ""}`} placeholder="e.g. DECRUDEAI2026"
+                <input type="text" className={`pg-input ${error ? "err" : ""}`} placeholder="Enter your access code"
                   value={password} onChange={(e) => { setPassword(e.target.value); setError(false); }}
                   autoComplete="off" spellCheck={false} autoFocus />
               </div>
