@@ -2,7 +2,6 @@
 
 import * as React from "react";
 import { FooterSection } from "@/components/ui/footer-section";
-import { DottedSurface } from "@/components/ui/dotted-surface";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Check, ExternalLink, AlertTriangle, Info, CheckCircle2 } from "lucide-react";
 import Image from "next/image";
@@ -13,7 +12,6 @@ export default function Home() {
   return (
     <PasswordGate>
     <div className="relative min-h-screen bg-gradient-to-b from-background to-secondary/10 font-sans">
-      <DottedSurface />
 
       {/* Hero Section */}
       <section className="relative container mx-auto px-4 py-8 md:py-14">
